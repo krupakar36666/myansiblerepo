@@ -10,4 +10,4 @@
   - name: i want ti start apache2
     service: 
       name: apache2
-      state: restarted
+      state: restarted 
