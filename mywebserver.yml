@@ -1,0 +1,13 @@
+---
+- hosta: all 
+  become: yes 
+  tasks: 
+  - name: i want to install apache2+ansible.builtin.apt:
+    apt:
+      name: apache2
+    state: present
+
+  - name: i want ti start apache2
+    service: 
+      name: apache2
+      state: restarted
