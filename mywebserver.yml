@@ -2,7 +2,7 @@
 - hosta: all 
   become: yes 
   tasks: 
-  - name: i want to install apache2+ansible.builtin.apt:
+  - name: i want to install apache2
     apt:
       name: apache2
     state: present
