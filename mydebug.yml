@@ -3,4 +3,4 @@
    become: yes
    tasks: 
    - name: i want to execute direct linux command
-     cammand: hostname -f
+     command: hostname -f
