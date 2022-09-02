@@ -2,5 +2,5 @@
 - hosts: 172.31.29.55
   become: yes
   tasks: 
-- name: i want to execute direct linux commnad
+  - name: i want to execute direct linux command
   cammand: hostname -f
