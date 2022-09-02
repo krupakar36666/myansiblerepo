@@ -1,5 +1,3 @@
----
-myvar: value
 mywebpackonubuntu: apache2
 mywebpackonredhat: httpd
 myjavapackonubuntu: openjdk-8-jre
