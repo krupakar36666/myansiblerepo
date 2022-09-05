@@ -20,7 +20,7 @@
     template:
          src: myindex.j2
          dest: /var/www/html/index.html
-    nodify: restartwebserver
+    notify: restartwebserver
 
   - name: i want to download files from remote [internet] into nodes side
     get_url:
@@ -32,6 +32,7 @@
     file: 
       path: /home/ubuntu/myfolder
       state: directory
+ 
   handlers:
   - name: restartwebserver
     service:
