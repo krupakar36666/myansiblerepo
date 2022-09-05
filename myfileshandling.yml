@@ -3,13 +3,13 @@
   become: yes
   tasks:
   - include_tasks: myfiles.yml
-  
+
   - name: i want to install webserver
     apt:
       name: apache2
       state: present
    
   - name: i want to copy static files into ansible nodes side
-    template:
-         src: mystaticfile.html
-         dest: /var/www/html/index.html
+    copy:
+     src: mystaticfile.html
+     dest: /var/www/html/index.html
