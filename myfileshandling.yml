@@ -8,18 +8,20 @@
     apt:
       name: apache2
       state: present
-    nodify: restartwebserver
+    
+
   - name: i want to copy static files into ansible nodes side
     copy:
      src: mystaticfile.html
      dest: /var/www/html/index.html
-    nodify: restartwebserver 
+    
 
   - name: i want to copy dynamic file into ansible nodes side
     template:
          src: myindex.j2
          dest: /var/www/html/index.html
     nodify: restartwebserver
+
   - name: i want to download files from remote [internet] into nodes side
     get_url:
      url: https://get.jenkins.io/war-stable/2.346.3/jenkins.war
