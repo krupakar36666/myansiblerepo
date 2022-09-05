@@ -1,0 +1,22 @@
+---
+- hosts: 172.31.29.55
+  become: yes
+  tasks:
+  - name: install git
+    apt:
+      name: git
+      state: present
+    tags: mygit
+
+  - name: install tree
+    apt:
+       name: treekkk
+       state: present
+    tags: mytree
+    ignore_errors: yes
+
+  - name: wget
+    apt:
+      name: wget 
+      state: present
+    tags: wget

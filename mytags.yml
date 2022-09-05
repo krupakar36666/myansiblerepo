@@ -10,10 +10,11 @@
 
   - name: install tree
     apt:
-       name: treekk
+       name: tree
        state: present
     tags: mytree
-    ignore_errors: yes
+
+
   - name: wget
     apt:
       name: wget 
