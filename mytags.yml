@@ -13,7 +13,7 @@
        name: treekk
        state: present
     tags: mytree
-
+    ignore_errors: yes
   - name: wget
     apt:
       name: wget 
