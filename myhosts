@@ -1,18 +1,18 @@
-[mywebserver]
+[mywebservers]
 172.31.26.45
 
 
-[myapplicationserver]
+[myapplicationservers]
 172.31.26.45
 
-[myDBserver]
+[myDBservers]
 172.31.29.10
 172.31.29.90
 
-[myubuntuserver]
+[myubuntuservers]
 172.31.27.55
 
-[myredhatserver]
+[myredhatservers]
 172.31.28.193
 
 myvar= value
