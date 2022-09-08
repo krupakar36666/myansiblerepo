@@ -1,0 +1,8 @@
+---
+- name: change owner as tomcat
+  command:
+  tomcat: tomcat /opt/tomcat
+
+- name: make execute acces on bin folder
+  command: sudo chmod -R u+x /opt/tomcat/bin
+  
